@@ -1,0 +1,47 @@
+1. Configuración del teclado:
+setxkbmap -layout latam
+
+2. Creación de un directorio de trabajo:
+mkdir cripto
+cd cripto/
+
+3. Generar una clave privada RSA de 2048 bits:
+openssl genrsa -out private.key 2048
+
+4. Ver contenido de la clave privada:
+cat private.key
+
+5. Creación de un archivo de texto con Nano:
+nano archivo.txt
+
+6. Cifrado de un archivo con DES:
+openssl enc -in archivo.txt -out archivo.enc -e -des-cbc -k private.key -pbkdf2
+
+7. Ver el contenido cifrado del archivo:
+cat archivo.enc
+
+8. Descifrado del archivo cifrado con DES:
+openssl enc -in archivo.enc -out archivo2.txt -d -des-cbc -k private.key -pbkdf2
+
+9. Cifrado con 3DES:
+openssl enc -in archivo.txt -out archivo3.enc -e -des-ede3-cbc -k private.key -pbkdf2
+
+10. Descifrado del archivo cifrado con 3DES:
+openssl enc -in archivo3.enc -out archivo3.txt -d -des-ede3-cbc -k private.key -pbkdf2
+
+11. Cifrado con AES-256:
+openssl enc -in archivo.txt -out archivo4.enc -e -aes-256-cbc -k private.key -pbkdf2
+
+12. Descifrado del archivo cifrado con AES-256:
+openssl enc -in archivo4.enc -out archivo4.txt -d -aes-256-cbc -k private.key -pbkdf2
+
+13. Cifrado con AES-256 usando una contraseña:
+openssl enc -in archivo.txt -out archivo5.enc -e -aes-256-cbc -pbkdf2
+
+14. Descifrado de AES-256 con contraseña:
+openssl enc -in archivo5.enc -out archivo5.txt -d -aes-256-cbc -pbkdf2
+
+15. Medición de rendimiento con OpenSSL para DES, 3DES y AES:
+openssl speed des
+openssl speed des-ede3
+openssl speed aes-128-cbc
