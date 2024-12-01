@@ -32,6 +32,18 @@ Se estudiaron los siguientes métodos de criptografía asimétrica:
 
 Además, se trabajó con **Wireshark** y **SSL/TLS**.
 
+#### Actividad 4 - Metadatos y Esteganografía
+- Se realiza la búsqueda de la ubicación de una fotografía a través de los metadatos usando FOCA
+- Se realiza la extracción de archivos secretos en una imagen usando HexEdit y PhotoFiltre 11
+
+#### Actividad 5: Desafío de Ciberseguridad
+Se realizó un desafío de ciberseguridad que comprendía los siguientes contenidos:
+- 1. Busqueda de la ubicación de una fotografía a través de sus metadatos
+- 2. Extracción de archivos ocultos en una imagen con HexEdit
+- 3. Reconstrucción de una fotografía recortada a través de sus metadatos usando FOCA
+- 4. Cifrado simétrico con DES y asimétrico con RSA de un nombre y 
+- 5. Comparación de archivos a través de función hash y extrcción de archivos ocultos
+- 6. Resolución de desafío extrayendo archivos ocultos con HexEdit y descifrado de contraseñas con John The Ripper
 ---
 
 Todas las actividades se realizaron en **Kali Linux 2024.3** a través de la **MV Oracle VirtualBox**.
