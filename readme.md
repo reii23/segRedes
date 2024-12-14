@@ -46,6 +46,19 @@ Se realizó un desafío de ciberseguridad que comprendía los siguientes conteni
 - 6. Resolución de desafío extrayendo archivos ocultos con HexEdit y descifrado de contraseñas con John The Ripper
 ---
 
+#### Control 2: Controles de Seguridad en Cisco Packet Tracer y clasificación en frameworks
+Se realizaron 10 controles de seguridad en Cisco Packer Tracer y se clasifican en los frameworks ISO 27001, NIST CSF 2.0 y Cis Control V8
+- 1. Cifrado de datos: se cifran las contraseñas para modo privilegiado
+- 2. Inicio de sesión seguro: se implementa el modelo AAA
+- 3. Gestión de privilegios: se implementan usuarios con distintos permisos según su rol o nivel de privilegio
+- 4. Acceso a las redes y servicios de red: se implementa el protocolo 802.1x
+- 5. Sincronización de reloj: se sincroniza la hora de los dispositivos conectados
+- 6. Seguridad de puerto: se implementa seguridad de puertos para controlar acceso restringido desde otra MAC que no sea la autorizada
+- 7. Política SSH: se configura SSH y desactiva Telnet permitiendo acceso remoto seguro
+- 8. Bloqueo sesión por inactividad: se configura el cierre de sesiones luego de 5 minutos de inactividad al ingresar a los dispositivos
+- 9. Registros de auditoria: se configuran marcas de tiempo para capturar hora y acciones realizadas sobre el router
+- 10. Banner de advertencia: se configura un banner de advertencia para accesos no autorizados al dispositivo
+
 Todas las actividades se realizaron en **Kali Linux 2024.3** a través de la **MV Oracle VirtualBox**.
 
 ### Contacto
